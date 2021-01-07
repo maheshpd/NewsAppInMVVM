@@ -1,10 +1,15 @@
 package com.createsapp.newsappinmvvm
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
-import androidx.annotation.Keep
 
-@Keep
+@Entity(
+    tableName = "articles"
+)
 data class Article(
+    @PrimaryKey(autoGenerate = true)
+    var id: Int? = null,
     var author: String,
     var content: String,
     var description: String,
