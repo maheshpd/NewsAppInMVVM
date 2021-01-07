@@ -1,7 +1,8 @@
-package com.createsapp.newsappinmvvm
+package com.createsapp.newsappinmvvm.model
 
 
 import androidx.annotation.Keep
+import com.createsapp.newsappinmvvm.model.Article
 
 @Keep
 data class NewsResponse(
